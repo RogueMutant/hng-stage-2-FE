@@ -11,7 +11,7 @@ const App: React.FC = () => {
   return (
     <ThemeProvider>
       <InvoiceProvider>
-        <Router>
+        <Router basename="/hng-stage-2-FE">
           <div className="app-container">
             <Sidebar />
             <main className="main-content">

@@ -4,5 +4,6 @@ import svgr from 'vite-plugin-svgr'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/hng-stage-2-FE/',
   plugins: [react(), svgr()],
 })
