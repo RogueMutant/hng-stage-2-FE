@@ -1,0 +1,147 @@
+.container {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.titleArea {
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle {
+  color: var(--text-body);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.plusIcon {
+  background-color: #FFFFFF;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.emptyState img {
+  margin-bottom: 64px;
+}
+
+.emptyState h2 {
+  margin-bottom: 24px;
+}
+
+.emptyState p {
+  max-width: 220px;
+  line-height: 1.5;
+  font-size: 12px;
+}
+
+.headerToggle {
+  background: none;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.themeIcon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.themeIcon.light {
+  border-radius: 50%;
+  box-shadow: inset 6px -4px 0 0 #7e88c3;
+  transform: rotate(-20deg);
+}
+
+.themeIcon.light:hover {
+  box-shadow: inset 6px -4px 0 0 #000000;
+}
+
+.themeIcon.dark {
+  width: 10px;
+  height: 10px;
+  background: #7e88c3;
+  border-radius: 50%;
+  box-shadow:
+    0 -8px 0 -4px #7e88c3,
+    0 8px 0 -4px #7e88c3,
+    -8px 0 0 -4px #7e88c3,
+    8px 0 0 -4px #7e88c3,
+    -6px -6px 0 -4px #7e88c3,
+    6px 6px 0 -4px #7e88c3,
+    -6px 6px 0 -4px #7e88c3,
+    6px -6px 0 -4px #7e88c3;
+}
+
+.themeIcon.dark:hover {
+  background: #ffffff;
+  box-shadow:
+    0 -8px 0 -4px #ffffff,
+    0 8px 0 -4px #ffffff,
+    -8px 0 0 -4px #ffffff,
+    8px 0 0 -4px #ffffff,
+    -6px -6px 0 -4px #ffffff,
+    6px 6px 0 -4px #ffffff,
+    -6px 6px 0 -4px #ffffff,
+    6px -6px 0 -4px #ffffff;
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin-bottom: 32px;
+    background-color: var(--bg-app);
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .titleArea h1 {
+    font-size: 24px;
+  }
+
+  .actions {
+    gap: 12px;
+    align-items: center;
+  }
+
+  .headerToggle {
+    display: flex;
+  }
+
+  .fullText {
+    display: none;
+  }
+}

@@ -1,0 +1,42 @@
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 104px;
+  height: 40px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: -0.25px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.paid {
+  background-color: rgba(51, 214, 159, 0.06);
+  color: var(--color-paid);
+}
+.paid .dot { background-color: var(--color-paid); }
+
+.pending {
+  background-color: rgba(255, 143, 0, 0.06);
+  color: var(--color-pending);
+}
+.pending .dot { background-color: var(--color-pending); }
+
+.draft {
+  background-color: rgba(55, 59, 83, 0.06);
+  color: var(--color-draft);
+}
+.draft .dot { background-color: var(--color-draft); }
+
+[data-theme='dark'] .draft {
+  background-color: rgba(223, 227, 250, 0.06);
+  color: #DFE3FA;
+}
+[data-theme='dark'] .draft .dot { background-color: #DFE3FA; }
